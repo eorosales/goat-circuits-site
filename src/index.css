@@ -1,0 +1,143 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  /* Color */
+  --clr-primary-200: rgba(0, 95, 128, 1);
+  --clr-primary-300: rgba(0, 76, 102, 1);
+  --clr-primary-400: rgba(0, 38, 51, 1);
+  --clr-secondary-300: rgba(0, 158, 110, 1);
+  --clr-secondary-400: rgba(1, 80, 69, 1);
+  --clr-tertiary-100: rgba(255, 255, 223, 1);
+  --clr-accent-300: rgba(233, 107, 81, 1);
+  --clr-neutral-100: rgba(255, 255, 255, 1);
+
+  /* Background */
+  --bg-gradient: linear-gradient(
+      45deg,
+      rgba(0, 119, 85, 0.9),
+      rgba(0, 38, 51, 1)
+    ),
+    url("../public/assets/images/bg-img.jpg");
+
+  /* Spacing */
+  --padding-sm: 1em;
+  --padding-md: 1.2em;
+  --padding-lg: 2em;
+
+  --margin-sm: 0.625em;
+  --margin-md: 1.2em;
+  --margin-lg: 1.8em;
+
+  /* Font Family */
+  --ff-primary: "Barlow", sans-serif;
+
+  /* Font Weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* Font Sizes */
+  --fs-h1: 2.6rem;
+  --fs-h2: 1.825rem;
+  --fs-copy: 1.125rem;
+  --fs-button: 1.5rem;
+}
+
+@media (min-width: 580px) {
+  :root {
+    --fs-h1: 2.4rem;
+  }
+}
+
+/* Utilities */
+
+html {
+  font-size: 1.125rem;
+}
+
+.btn {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+  width: 10em;
+  height: 2em;
+  border-radius: 0.8em;
+  border: none;
+}
+
+.btn:hover {
+  outline: 5px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-accent-300);
+}
+
+.btn-contact {
+  background-color: var(--clr-primary-200);
+}
