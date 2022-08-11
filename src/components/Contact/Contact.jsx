@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react'
 import './_Contact.css'
 
 
@@ -23,34 +22,31 @@ const Contact = () => {
     setMessage(e.target.value)
   }
   // Submit Form Handler
-  const submitEmail = (e) => {
+  const submitEmail = async (e) => {
     e.preventDefault();
     const data = {
       name, email, subject, message
     }
-
-    axios({
-      method: 'post',
-      url: 'http://www.goatcircuits.com/send',
-      header: { 'Content-Type': 'multipart/form-data' },
-      data
-    }).then((response) => {
-      console.log(response);
-      setStatus("Sending...");
-      resetForm();
-      console.log(response);
-    }).catch((err) => {
-      console.log(`Error --> ${err}`)
-    })
-  }
-  // Empty Input Fields When Email Successfully Submitted
-  const resetForm = () => {
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
     setStatus('Sent!');
+
+    try {
+      let response = await fetch('http://localhost:5000/send', {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(data)
+      })
+      let result = await response.json();
+      alert(result.status);
+    }catch(err) {
+      console.log(`Error --> ${err}`)
+    }
+
   }
+
+  
+
 
   return (
     <div className="contact" id="contact">
