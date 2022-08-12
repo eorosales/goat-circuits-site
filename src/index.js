@@ -5,7 +5,7 @@ import './index.css';
 import Header from './components/Header/Header'
 import Services from './components/Services/Services'
 import About from './components/About/About'
-import Contact from './components/Contact/Contact'
+import ContactUs from './components/ContactUs/ContactUs'
 import Footer from './components/Footer/Footer'
 
 
@@ -16,7 +16,7 @@ root.render(
       <Header title="Goat Circuits"/>
       <Services />
       <About />
-      <Contact />
+      <ContactUs />
       <Footer />
     </div>
   </React.StrictMode>
