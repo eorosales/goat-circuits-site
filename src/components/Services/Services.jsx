@@ -5,26 +5,26 @@ const servicesInfo = [
     id: 1,
     title: "Schematic Design",
     icon: "../../assets/images/schematics.svg",
-    description: "Consectetur consequat eget eu ac. Viverra mi commodo, et lectus amet scelerisque. Velit faucibus quis tortor id sit leo ullamcorper velit consequat. Tortor, mauris eget tortor, sed. Ut tincidunt at at commodo. Quisque vivamus."
+    description: "We take pride in creating well organized, structured schematics in which any electrical engineer can review our designs and be able to quickly assess the intent of our finished work. "
   },
   {
     id: 2,
     title: "Printed Circuit Board",
     icon: "../../assets/images/pcb.svg",
-    description: "Proin vel purus eget sed vestibulum habitant nec pellentesque semper. Massa amet amet vitae in quam pretium imperdiet. Sit cum platea urna in. Et scelerisque elementum risus interdum id magna luctus. Amet ultricies feugiat."
+    description: "Equipped with years of board design experience coupled with knowledge of bare board fabrication specifications, we produce designs that are robust, cost-effective, and functional while being aesthetically pleasing to the eye."
   },
   {
     id: 3,
     title: "Electrical Librarian",
     icon: "../../assets/images/electrical-library.svg",
-    description: "Eget gravida massa ultricies mattis non gravida suspendisse. Duis massa augue gravida proin sem nullam arcu, consectetur augue. Volutpat imperdiet augue dolor volutpat porttitor mattis enim a. Hac viverra ac id sed suspendisse."
+    description: "Our team builds libraries from the ground up and manage components as they go from active to end of life. Working directly with assembly manufacturers, our component footprints follow vendor and IPC standards during board assembly."
   }
 ]
 
 const Services = () => (
   <section className="services">
     <div className="services__container">
-      {/* <h2>Featured Services</h2> */}
+      <h2>Featured Services</h2>
       {
         servicesInfo.map(serviceInfo => (
           <div className="services__card" key={serviceInfo.id}>

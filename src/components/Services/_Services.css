@@ -11,10 +11,13 @@
 }
 
 .services__container > h2 {
+  height: 2rem;
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   text-align: center;
   text-transform: uppercase;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
 }
 
 .services__card {
@@ -39,6 +42,7 @@
 
 .services__card > p {
   margin-top: var(--margin-sm);
+  text-align: left;
 }
 
 @media (min-width: 675px) {
@@ -49,14 +53,26 @@
 }
 
 @media (min-width: 1080px) {
+  .services {
+    padding: 0;
+    padding-bottom: 1.2em;
+  }
+
   .services__container {
     width: 90%;
-    margin: 5em auto;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .services__container > h2 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+
   .services__card p {
-    font-size: 0.89rem;
+    font-size: 1rem;
+    text-align: left;
   }
 }

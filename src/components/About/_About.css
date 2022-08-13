@@ -13,6 +13,7 @@
   flex-direction: column;
   font-family: var(--ff-primary);
   font-size: var(--fs-copy);
+  padding-bottom: 2em;
 }
 
 .about__profile-pic {
@@ -43,5 +44,13 @@
   .about__container {
     width: 50%;
     margin: 0 auto;
+  }
+  .about__bio > p {
+    text-align: left;
+  }
+
+  .about__bio > h3 {
+    margin-bottom: 2em;
+    line-height: 0.9rem;
   }
 }
