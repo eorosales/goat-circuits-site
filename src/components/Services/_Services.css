@@ -42,7 +42,6 @@
 
 .services__card > p {
   margin-top: var(--margin-sm);
-  text-align: left;
 }
 
 @media (min-width: 675px) {

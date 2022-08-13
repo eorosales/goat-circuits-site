@@ -17,7 +17,7 @@ const servicesInfo = [
     id: 3,
     title: "Electrical Librarian",
     icon: "../../assets/images/electrical-library.svg",
-    description: "Our team builds libraries from the ground up and manage components as they go from active to end of life. Working directly with assembly manufacturers, our component footprints follow vendor and IPC standards during board assembly."
+    description: "Our team builds libraries from the ground up and manage components as they go from active to end of life. Our component footprints follow vendor and IPC standards. During board assembly, we work directly with assembly manufacturers constantly throughout this process."
   }
 ]
 
