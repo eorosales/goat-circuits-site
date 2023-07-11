@@ -1,73 +1,23 @@
-# Getting Started with Create React App
+# Goat Circuits Business Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small businesses founded in San Jose, California in 2022. The client reached out expressing his desire to have a simple front-facing website simply describing his business. He wanted the ability for prospective clients to contact him via an email form. He also wanted to ensrue that it integrated with his existing Google business suite gmail account. Lastly, a logo design and headshot was commissioned based on what he was looking for and his chosen color palette.
 
-## Available Scripts
+## Process
 
-In the project directory, you can run:
+The site had been built using React and Tailwind. React was used for it's optimized performance and quick iteration. Due to its modularity, scaling up with the addition of use cases will be more streamlined. Tailwind had been chosen due to its "utility-first" philosophy amd quick iteration which allowed less CSS to be written. EmailJS was the chosen technology to integrate email forms with the clients existing Google business suite. This had been challenging to implement due to a lack of documentation. However, with a lot of trail and error, time and studying, emails successfully arrived in the client's inbox. Lastly, the client's website is hosted on Netlify. This was chosen due to it's out-of-the-box CI/CD infrastrcuture which allowed for quick deployment if necessary.
 
-### `npm start`
+## Technology
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Tailwind CSS
+- EmailJS
+- Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Future Features
 
-### `npm test`
+- Once the business owner completes several projects, a "Case Studies" page will be included
+- Depending on the media and documentation of projects, Contentful may be integrated
+- Client is playing around with the possibility of a blog
+- Client would like a way for customer's to track projects as they progress
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-1//04AJocCDUKmeXCgYIARAAGAQSNwF-L9IrRWA54w5fU3fUfprU_2SNB7batWr-5q6gEAX2j8btdAzKl2HpS6OXA-5vkW5dlNmuQc0
-1//04z4CtCT0zBZiCgYIARAAGAQSNwF-L9IrWeqHFXKxzMdu7jznjD8FhA7pxySt9geQkn0H3nybY4blct9WKAEvOrkBi7XoQkrNSLY
+\*_This is an ongoing project_
